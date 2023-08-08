@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <title>Portfolio Web Personal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body> 
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a target="_blank">
+                <i class="fa-brands fa-gg-circle"></i>
+                <span>Ricardo Díaz </span>
+                </a>
+            </div>
+           <nav id="nav" class="responsive">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre Mi</a></li>
+                    <li><a href="#habilidades" onclick="seleccionar()">Habilidades</a></li>                    
+                    <li><a href="#proyectos" onclick="seleccionar()">Proyectos</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav> 
+
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>                 
+            </div> 
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/fotografia_personal.png" alt="fotografia_personal">
+            </div>
+            <h1>Ricardo Díaz Matus</h1>
+            <h2>Técnico en Sistemas Digitales</h2>
+            <div class="redes">
+                <a target="_blank" href="https://github.com/RicardoDiazMatus"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" href="https://www.facebook.com/ricardo.diazmatus10"><i class="fa-brands fa-facebook"></i></a> 
+                <a target="_blank" href="https://discordid.netlify.app/?id=728429679522086914"><i class="fa-brands fa-discord"></i></a> 
+                <a target="_blank" href="https://www.linkedin.com/in/ricardo-diaz-matus-090604287/"><i class="fa-brands fa-linkedin"></i></a>                          
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p>Hola, soy Ricardo Díaz Matus.
+                <span>Técnico en Sistemas Digitales con 2 años de experiencia en
+                    pequeños y diversos Proyectos de Electrónica personales.
+                    Mi creativa, dedicación y desempeño en el diseño me permite plasmar en placas de prueba, 
+                    los distintos circuitos electrónicos sean efectivos y confiables.
+                </span> 
+            </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            <span>11-02-2000</span>
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            <span>+52 55 37044214</span>
+                        </li> 
+                        <li>
+                            <strong>Email</strong>
+                            <span>ricardodiazmatus@gmail.com</span> 
+                        </li>
+                        <li>
+                            <strong>Microsoft Teams</strong>
+                            <span>Ricardo Díaz Matus</span> 
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            <span>Calle 18. Coacalco, Edo de Méx.</span> 
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-newspaper"></i>
+                            <span>PERIODISMO</span>
+                            <span>DEPORTIVO</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-futbol"></i> 
+                            <span>DEPORTES</span>
+                        </div>     
+                    </div>
+                </div>
+            </div>
+            <!-- <button type="button">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button> -->
+        </div>
+    </section>
+
+    <!-- SECCION Habilidades Técnicas y Blandas -->
+    <section class="habilidades" id="habilidades">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Habilidades Técnicas -->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <ul>
+                        <li>
+                            <strong>Proteus</strong>
+                            <span>Intermedio</span>
+                        </li>
+                        <li>
+                            <strong>HTML & CSS</strong>
+                            <span>Básico</span> 
+                        </li>
+                        <li>
+                            <strong>Cisco Packet Tracer</strong>
+                            <span>Pre-Intermedio</span>
+                        </li>
+                        <li>
+                            <strong>GNS3</strong>
+                            <span>Pre-Intermedio</span>                                             
+                        </li>
+                        <li>
+                            <strong>Microsoft Office Word</strong>
+                            <span>Intermedio</span>
+                        </li>
+                        <li>
+                            <strong>Microsoft Office Power Point</strong>
+                            <span>Intermedio</span>
+                        </li>
+                        <li>
+                            <strong>MySQL</strong>
+                            <span>Básico</span> 
+                        </li>                        
+                    </ul>                  
+                </div>
+                <!-- Habilidades Blandas -->
+                <div class="col">
+                    <h3>Habilidades Blandas</h3>
+                    <div class="habilidad">
+                        <span>Comunicación</span>
+                    </div>
+                    <div class="habilidad">
+                        <span>Trabajo Colaborativo</span>
+                    </div>
+                    <div class="habilidad">
+                        <span>Organización</span>
+                    </div>
+                    <div class="habilidad">
+                        <span>Dedicación </span>
+                    </div>
+                    <div class="habilidad">
+                        <span>Creatividad</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    <!-- SECCION PROYECTOS -->
+    <section id="proyectos" class="proyectos">
+        <div class="contenido-seccion">
+            <h2>Proyectos</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/laberinto.png" alt="">
+                    <div class="overlay">
+                        <h3>"RETO: Laberinto con Móvil 4 Esquinas"</h3>
+                        <p>Construir un móvil con dos ruedas que se desplace por un tablero con paredes y sea capaz de
+                            desplazarse por este hasta llegar a las 4 esquinas.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/cala.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>"Calavera Luminosa Secuencial"</h3>
+                        <p>Enciende y Apaga una serie de LED’s por un determinado tiempo en los ojos, dientes y cráneo de una calavera.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/rueda.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>"Prototipo de Control por Tiempo de una Rueda de la Fortuna"</h3>
+                        <p>Diseño y Empleo de un Motor de Corriente Directa (D.C), capaz de controlarse mediante un tiempo determinado, como también el disminuir y aumentar el brillo de LED’s.</p>
+                    </div> 
+                </div>
+                <div class="proyecto">
+                    <img src="img/sensor.png" alt="">
+                    <div class="overlay">
+                        <h3>"Detector de Luz para Casa-Habitación"</h3>
+                        <p>Activar y Desactivar las luces de alguna parte especifica de la Casa de forma automática al anochecer y al amanecer, sin la necesisas que se realice de forma manual.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/guiAR.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>"Asistente Turístico de Sitios Culturales (guiAR)"</h3>
+                        <p>Aplicación móvil con reconocimiento de imágenes de diversos sitios culturales, históricos e importantes de la Ciudad de México.</p>
+                    </div>
+                </div> 
+                <div class="proyecto">
+                    <img src="img/QRFast.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>"App Móvil QR-Fast"</h3>
+                        <p>Aplicación móvil aplicación móvil para reconocimiento de productos mediante código QR, dentro de una sucursal para agilizar el proceso de compra dentro de un supermercado.</p>
+                    </div>
+                </div>                             
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form name="contact" method="POST" data-netlify="true">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button type="submit">
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                <!-- </form> -->
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15031.503448429892!2d-99.10901049999998!3d19.63260425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f3c63d76313d%3A0x132d63c04af7af85!2s55700%20Coacalco%20de%20Berriozabal%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1691123514422!5m2!1ses-419!2smx" 
+                        width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>  
+                    
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                 Calle 18. Coacalco, Estado de México.
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                    Teléfono: +52 55 37044214
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: ricardodiazmatus@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <!--Información sobre el autor del sitio web-->
+        <a>Creado por Ricardo Díaz Matus 2023 &#169;</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

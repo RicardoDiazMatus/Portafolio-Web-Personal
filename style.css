@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Shanti&family=Voces&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    box-sizing: border-box; 
+    font-family: 'Voces';
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+/* Menu */
+.contenedor-header{
+    /* background: #026a84c8;  */
+    /* background: #d5ca60c8; */
+    background: #252A2E; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.contenedor-header header .logo a{
+    font-family: 'Lato';
+    font-size: 35px;
+    font-weight: bold;  
+    color:#ffffbf;  
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    font-weight: bold;
+    color: #ffffbf;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #ffffff;
+    
+}
+
+.nav-responsive{
+    background-color: #026a84c8;
+    color:#ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* SECCION Inicio */
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(img/protoboard.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #ffffbf;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenido-banner{
+    padding: 20px;
+    /* background-color: #01304bc8; */
+    background-color:#026983c8;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contenido-banner img{
+    margin-top: 40px;   
+    display: block;
+    width: 60%;
+    margin: auto;
+    border-radius: 100%;
+}
+.inicio .contenido-banner h1{
+    margin-top: 30px;
+    font-size: 42px;
+    font-family: 'Voces';
+    font-weight: bold;
+}
+.inicio .contenido-banner h2{
+    font-size: 20px;
+    line-height: 60px;
+    font-weight: bold;
+}
+.inicio .contenido-banner .redes a{
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #ffffbf;
+    border-radius: 25%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;   
+    margin: 20px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contenido-banner .redes a:hover{
+    background-color: #1CB698;
+}
+
+/* SECCION Sobre mí */
+.sobremi{
+    background-color: #035367;
+    color: rgb(255, 247, 232); 
+    padding: 45px 20px;
+}
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h2{
+    font-size: 50px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 20px 0;
+
+}
+.sobremi .contenido-seccion p{
+    font-size: 20px;    
+    text-align: justify;
+    line-height: 25px;
+    color: #1fff8b;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 0 10px;    
+}
+.sobremi .contenido-seccion p span{
+    /*color: #bdecb6; */
+    color: #ffffbf;  
+    font-size: 16px; 
+    font-weight:normal;   
+}
+.sobremi .fila{
+    display: flex;
+}
+.sobremi .fila .col
+{
+    width: 50%;
+}
+.sobremi .fila .col h3{
+    font-size: 28px;
+    text-align: center;
+    padding: 0 10px;
+    font-family: 'Shanti';
+    margin-bottom: 20px;
+}
+.sobremi .fila .col ul{
+    list-style: none;
+    margin-bottom: 20px;       
+    
+}
+.sobremi .fila .col ul li{
+    margin: 15px 10px;
+}
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    /* color:  #a8db1c; */
+    color: #1fff8b;
+    font-weight: bold;
+    font-size: 15px;
+    width: 105px;    
+   
+}
+
+.sobremi .fila .col ul li span{
+    /* color: #06de6e; */
+    /* color: #a8db1c; */
+    /*color: #bdecb6;   */
+    color:#ffffbf;
+    /* color: rgba(252, 159, 20, 0.637); */
+    margin-bottom: 80px;
+    font-weight: normal;
+    font-size: 14px;
+    border-radius: 5px;    
+}
+.sobremi .fila .col .contenedor-intereses{
+    display:flex;
+    flex-wrap:wrap;
+}
+.sobremi .fila .col .contenedor-intereses .interes{
+    width: 112px;
+    height: 112px;
+     background-color: #252A2E; 
+    /* background-color: #02a6ffee; */    
+    border-radius: 20px;
+    margin: 0 0 25px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}.sobremi .fila .col .contenedor-intereses .interes:hover{
+    background-color: #1CB698;
+}
+.sobremi .fila .col .contenedor-intereses .interes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #ffffff;
+    position: relative;
+    z-index: 10;
+}
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+.sobremi button:hover .overlay{
+    width: 100%;
+}
+/* SECCION Habilidades */
+.habilidades{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(img/componentes.jpg);
+    background-size: cover;    
+    color:  rgb(255, 242, 216);   
+    padding: 50px 20px;
+    align-items: center;
+    /*    
+    color: rgb(255, 247, 232); 
+    padding: 50px 20px; */
+}
+.habilidades .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.habilidades h2{
+    font-size: 50px;    
+    font-family: 'Lato';
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 15px;
+
+}
+/* .habilidades .fila{
+    display: flex;
+}
+.habilidades .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.habilidades .fila .col h3{
+    font-size: 35px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+} */
+.habilidades .fila{
+    display: flex;
+}
+.habilidades .fila .col
+{
+    width: 55%;
+    padding: 0 20px;
+}
+.habilidades .fila .col h3{
+    font-size: 30px;    
+    text-align: left;  
+    font-family: 'Shanti';
+    margin-bottom: 25px;
+}
+.habilidades .fila .col span{
+    font-size: 20px;
+    color:#bdecb6;  
+    text-align: left;   
+}
+
+.habilidades .fila .col ul{
+    list-style: none;
+}
+.habilidades .fila .col ul li{
+    margin: 12px 0;
+}
+.habilidades .fila .col ul li strong{
+    display: inline-block;
+    /* color: #1CB698; */
+    color: #1fff8b;    
+    font-size: 19px;
+    width: 260px; 
+}
+.habilidades .fila .col ul li span{
+    color: #ffffff;
+    padding: 20px;
+    font-weight: bold; 
+    font-size: 19px;    
+    border-radius: 5px;
+}
+.habilidades .habilidad  span{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: justify;
+    display: block;
+    margin-bottom: 12px;
+}
+.habilidades .habilidad  line{
+    border-left:5px solid #ffffff; 
+    height: 500px;
+    position: absolute;
+    margin-left: 3px;
+    top:150;
+}
+
+/* SECCION Proyectos */
+.proyectos{
+    background-color: #252A2E;
+    /* background-color: #035367; */
+    color:  rgb(255, 242, 216);  
+    padding: 50px 20px;
+}
+.proyectos .contenido-seccion{
+    max-width: 1200px;
+    margin: auto;
+}
+.proyectos h2{
+    font-size: 50px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 20px 0;
+}
+.proyectos .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.proyectos .galeria .proyecto{
+    position: relative;
+    max-width: 320px;
+    height:fit-content;
+    margin: 30px;
+    cursor: pointer;
+}
+.proyectos .galeria .proyecto img{
+    width: 330px;
+	height: 330px;    
+    display: block; 
+}
+.proyectos .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 330px;
+	height: 330px; 
+    text-align: center;
+    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    transition: 2s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.proyectos .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.proyectos .galeria .proyecto .overlay:hover{
+    opacity: 1;
+}
+.proyectos .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 20px;
+}
+/* SECCION CONTACTO */
+.contacto{
+    /* background-image: url(img/contact_bg.png); */
+     background-color: #035367;
+    /* background-color: #252A2E;  */
+    color:   rgb(255, 242, 216);  
+    padding: 50px 20px;
+}
+.contacto .contenido-seccion{
+    max-width: 1100px; 
+    margin: auto;
+}
+.contacto h2{
+    font-size: 50px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 40%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-bottom: 14px;
+    background-color:  #fffff3; 
+    color: #252A2E;
+    font-weight: bold;
+    font-size: 16px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #ffffff;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+} 
+.contacto .col iframe{
+    width: 100%;
+}
+.contacto .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contacto .col .info ul{
+    list-style: none;
+}
+.contacto .col .info ul li{
+    margin-bottom: 20px;
+}
+.contacto .col .info ul li i{
+    color: #026a84c8;
+    display: inline-block;
+    margin-right: 20px;
+}
+footer{
+    background-color: #252A2E;
+    color: #ffffbf;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color:  #026a84c8;
+    color: #ffffbf;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #ffffff;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+
+    .habilidades .fila{
+        display: block;
+    }
+    .habilidades .fila .col{
+        width: 100%;
+    }
+    .habilidades .fila .col .barra-habilidad{
+        width: 100%;
+    }
+   
+    .proyectos .galeria{
+        display: block;
+        width: 100%;
+    }
+    .proyectos .galeria .proyecto{
+        max-width: 100%;
+    }
+    .proyectos .galeria .proyecto img{
+        width: 100%;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+}
