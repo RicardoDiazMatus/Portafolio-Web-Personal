@@ -496,9 +496,9 @@ footer .h4{
     width: 42px;
     height: 42px;
     line-height: 42px;
-    margin: 40px 5px;
+    margin: 40px 25px;
     font-size: 20px;
-    transition: .3s;
+    transition: .3s;     
 }
 footer .h5{
     color: #ffffff;
