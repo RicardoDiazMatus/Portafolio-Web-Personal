@@ -486,10 +486,8 @@ footer{
     position: relative;
     width: 100%;
 }
-footer .redes{
-    margin-bottom: 20px;
-}
-footer .redes h4{
+
+footer .h4{
     color: #ffffff;
     display: inline-block;
     text-decoration: none;
@@ -502,7 +500,7 @@ footer .redes h4{
     font-size: 20px;
     transition: .3s;
 }
-footer .redes h5{
+footer .h5{
     color: #ffffff;
     display: inline-block;
     text-decoration: none;
