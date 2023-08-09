@@ -489,7 +489,20 @@ footer{
 footer .redes{
     margin-bottom: 20px;
 }
-footer .redes a{
+footer .redes h4{
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .redes h5{
     color: #ffffff;
     display: inline-block;
     text-decoration: none;
