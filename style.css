@@ -484,11 +484,14 @@ footer{
     padding: 50px 0 30px 0;
     text-align: center;
     position: relative;
-    width: 100%;
-    margin-bottom: 20px;
+    width: 100%;    
 }
 
-footer .h4{
+footer .contenido{
+     margin-bottom: 30px;
+}
+
+footer .contenido h4{
     color: #ffffff;
     display: inline-block;
     text-decoration: none;
@@ -501,7 +504,7 @@ footer .h4{
     font-size: 20px;
     transition: .3s;     
 }
-footer .h5{
+footer .contenido h5{
     color: #ffffff;
     display: inline-block;
     text-decoration: none;
