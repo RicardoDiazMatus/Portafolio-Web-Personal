@@ -1,10 +1,10 @@
 # **Portafolio-Web-Personal**
 
-##**Curso de Introducción al Fron-End, impartido por Mentoras Curies Community.**
+## **Curso de Introducción al Fron-End, impartido por Mentoras Curies Community.**
 
 - Mentoras:
-  - *Natalia Luna Lopez*
-  - *Shu Nashy Nizarely Arellano Aguillon*
-  - *Elisa Ramos Gomez*
-  - *Irene Elizabeth Lopez Mares**
+  - *Natalia Luna López*
+  - *Shu Nashy Nizarely Arellano Aguillón*
+  - *Elisa Ramos Gómez*
+  - *Irene Elizabeth López Mares**
     
